@@ -5,6 +5,62 @@
   <title>Responce page</title>
 </head>
 <body>
-<h1>Here is responce page</h1>
+ <div>
+    <header><img src="img/logo.png" alt="Logo"> <h1>Corgi Bags</h1>
+
+      <nav>
+          <a href="AboutUS.html">Наша місія</a>
+          <a href="Contacts.html">Контакти</a>
+            <button >Меню
+              <div>
+                  <a href="index.html">Головна</a>
+                  <a href="ResponcePage.html">Відгуки</a>
+                  <a href="Catalog.html">Каталог</a>
+                  <a href="ShoppingBasket.html">Корзина</a>
+              </div>
+            </button>
+      </nav>
+    </header>
+  </div>
+
+  <h2>Залиште свій відгук</h2>
+
+  <form action="ResponcePage.html" method="post">
+
+    <label for="email">Електронна пошта:</label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+
+    <label for="age">Ваш вік:</label>
+    <input type="number" id="age" name="age" required>
+    <br><br>
+
+    <label for="message">Ваш відгук:</label>
+    <textarea id="message" name="message" rows="2" cols="35" required></textarea>
+    <br> <br>
+
+    <label for="education">Ваша освіта:</label>
+    <select id="education" name="education">
+      <option value="engineer">Інженерна</option>
+      <option value="pedagogical">Педагогічна</option>
+      <option value="other">Інше</option>
+    </select>
+    <br><br>
+
+    <label>Оцінка якості матеріалу:</label><br>
+    <input type="radio" id="like" name="quality" value="like">
+    <label for="like">Гарна</label> <br>
+    <input type="radio" id="needs_improvement" name="quality" value="mid">
+    <label for="mid">Середня</label> <br>
+    <input type="radio" id="incomplete" name="quality" value="bad">
+    <label for="bad">Погана</label>
+    <br> <br>
+
+    <input type="checkbox" id="consent" name="consent" required>
+    <label for="consent">Я згоден(-на) на обробку моїх персональних даних</label>
+    <br> <br>
+
+    <button type="submit">Відправити відгук</button>
+  </form>
 </body>
 </html>
