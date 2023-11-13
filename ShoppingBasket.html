@@ -5,6 +5,51 @@
   <title>Корзина покупок</title>
 </head>
 <body>
+<div>
+    <header><img src="img/logo.png" alt="Logo"> <h1>Corgi Bags</h1>
+      <nav>
+          <a href="AboutUS.html">Наша місія</a>
+          <a href="Contacts.html">Контакти</a>
+            <button >Меню
+              <div>
+                  <a href="index.html">Головна</a>
+                  <a href="ResponcePage.html">Відгуки</a>
+                  <a href="Catalog.html">Каталог</a>
+                  <a href="ShoppingBasket.html">Корзина</a>
+              </div>
+            </button>
+      </nav>
+    </header>
+  </div>
+<main>
+  <form action="index.html" method="post">
+    <label for="name">Ім'я:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="name"> Прізвище:</label>
+    <input type="text" id="surname" name="surname" required>
 
+    <label for="address">Адреса доставки:</label>
+    <input type="text" id="address" name="address" required>
+
+    <label for="payment">Тип оплати:</label>
+    <select id="payment" name="payment">
+      <option value="cash">Готівкою при отриманні</option>
+      <option value="card">Кредитна карта</option>
+      <option value="paypal">PayPal</option>
+    </select>
+
+    <button type="submit">Підтвердити замовлення</button>
+  </form>
+
+</main>
+ <footer>
+
+    <p>
+      Контактна інформація: <br> corgibags@gmail.com <br>
+      +380990129004 <br>
+      проспект Миру 4Б, офіс 103 <br>
+    </p>
+    <p>&copy; 2023 Мій веб-сайт. Усі права захищені.</p>
+  </footer>
 </body>
 </html>
