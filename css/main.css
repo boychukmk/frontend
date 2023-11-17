@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Playfair+Display&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body{
   background-color: #1E1E1E;
   /*font: 500 16px/28px */
@@ -25,6 +31,15 @@ img{
   max-height: 100%;
   max-width: 100%;
 }
+button{
+  display: block;
+  border: none;
+  color: inherit;
+  font: inherit;
+  background-color: transparent;
+  transition: 0.4s;
+  cursor: pointer;
+}
 .conteiner{
   max-width: 90%;
   margin: 0 auto;
@@ -34,47 +49,205 @@ img{
   padding: 0 10px;
 }
 
+.btn-primary{
+  font-weight: 700;
+  /*background-color: #1E1E1E;*/
+  /*color: white;*/
+  color: #E519AC;
+  background-color: black;
+  padding: 20px 36px;
+  text-transform: uppercase;
+
+}
+.btn-primary:hover{
+   background-color: #E519AC;
+   color: black;
+}
+
+
 
 
 /*HEADER*/
 
 
 
-#header-section{
+#header-section {
   padding: 15px 0;
   background-color: #E519AC;
 }
+.header h1{
+  padding: 0 48px;
+  margin: 0 0;
+}
+
 .navbar img {
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    transition: transform 0.3s ease-in-out;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  transition: transform 0.3s ease-in-out;
+
 }
-.navbar img:hover{
-    transform: scale(1.3);
+
+.navbar img:hover {
+  transform: scale(1.3);
 }
-.header, .navbar, .nav-main{
+
+.header, .navbar, .nav-main {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.navbar{
+
+.navbar {
   flex-grow: 1;
 }
-.nav-main{
-  font: 400 24px cursive ,Comic Sans MS;
+
+.nav-main {
+  font: 400 24px cursive, Comic Sans MS;
   gap: 48px;
 }
-.header a:hover{
+
+.header a:hover {
   color: #410CB3;
   font-weight: 700;
 }
-.nav-item:hover{
+
+.nav-item:hover {
   color: #410CB3;
   font-weight: 700;
   font-size: 27px;
 
 }
+
+
+
+/*BANNER CATALOG*/
+
+
+#banner-section{
+  background-color: #410CB3;
+
+}
+.banner{
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0 50px;
+}
+.banner-info{
+  padding-left: 150px;
+
+}
+.banner-header{
+  font-size: 64px;
+  color: #E519AC;
+  padding: 10px 0;
+}
+.banner-text{
+  margin: 32px 0 64px;
+  font-size: 20px;
+  line-height: 36px;
+
+}
+
+
+
+/*NEWS BLOCKS*/
+#news h2{
+  font-weight: 700;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.conteiner-news {
+  display: flex;
+  justify-content: space-between; /* Рівномірно розміщує усі елементи між собою */
+}
+.news-list{
+  display: flex;
+  justify-content: space-between;
+  gap:50px
+}
+.news-list-item {
+  width: 30%; /* Ширина кожного елементу новини */
+  border: 2px solid #9747FF; /* Приклад рамки, можна замінити на свої стилі */
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.4s;
+}
+.news-list-item:hover{
+  background-color: #E519AC;
+}
+.news-list-item:hover:nth-child(odd){
+  background-color: #410CB3;
+
+}
+.news-list-item:nth-child(odd) {
+  border: 2px solid #0D99FF; /* Приклад рамки, можна замінити на свої стилі */
+}
+.news-list-item img {
+  margin-bottom: 10px;
+}
+.news-list-item h3 {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  color: #E519AC;
+}
+
+.news-list-item p {
+  font-size: 20px;
+  color: white;
+  padding: 5px;
+}
+
+
+
+/*TABLE*/
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: cursive, Comic Sans MS;
+  font-size: 20px;
+}
+
+caption {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+thead {
+  background-color: #E519AC;
+  color: #410CB3;
+}
+
+th, td {
+  border: 1px solid #0D99FF;
+  padding: 8px;
+  text-align: center;
+}
+/*tbody tr {*/
+/*  background-color: #0D99FF;*/
+/*  color: #410CB3;*/
+/*}*/
+/*tbody tr:nth-child(odd) {*/
+/*  background-color: #410CB3;*/
+/*  color: #E519AC;*/
+/*}*/
+
+/*tbody tr:hover {*/
+/*  background-color: #410CB3;*/
+/*  color: #E6E6E6;*/
+/*}*/
+
+
+
 
 /*.top-bar a{*/
 /*  color: inherit;*/
