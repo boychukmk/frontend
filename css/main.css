@@ -277,16 +277,6 @@ button{
 }
 
 
-
-
-.footer-copywrite{
-  font-family: Circe, sans-serif;
-  font-size: 19px;
-  display: flex;
-  justify-content: center;
-  padding:60px;
-  gap: 20px;
-}
 /*#footer-section {*/
 /* padding: 15px 0;*/
 /*  background-color: #4428F0EB;*/
@@ -302,18 +292,13 @@ button{
 /*  color: #E519AC;*/
 /*  font-weight: 700;*/
 /*}*/
-/*.navbar {*/
-/*  flex-grow: 1;*/
-/*}*/
-/*.nav-item:hover {*/
-/*  color: #410CB3;*/
-/*  font-weight: 700;*/
-/*  font-size: 27px;*/
 
-/*
+
+/**/
+/**/
 /*TABLE*/
-
-
+/**/
+/**/
 
 table {
   width: 100%;
@@ -352,6 +337,122 @@ th, td {
 /*  color: #E6E6E6;*/
 /*}*/
 
+
+
+/**/
+/**/
+/*FOOTER*/
+/**/
+/**/
+
+.footer-copywrite{
+  font-family: Circe, sans-serif;
+  font-size: 19px;
+  display: flex;
+  justify-content: center;
+  padding:60px;
+  gap: 20px;
+}
+
+
+
+/**/
+/**/
+/*ABOUT_US.html*/
+/**/
+/**/
+
+
+#about-us{
+  font: 500 24px/30px Georgia, serif;
+  padding-top: 110px;
+  transition: 0.8s;
+
+}
+.about-us-photo{
+  height: 300px;
+
+}
+.about-text{
+  padding: 30px;
+
+}
+.about-list-item h3{
+  display: flex;
+  justify-content: center;
+}
+.about-list-item{
+  border: 4px solid #0D99FF;
+  padding: 20px;
+  margin: 20px;
+  /*width: 300px;*/
+  /*height: 300px;*/
+}
+.about-list-item:hover{
+  background-color: #E519AC;
+}
+.about-list-item:nth-child(odd){
+  border: 4px solid #410CB3;
+  padding: 20px;
+  margin: 20px;
+}
+.about-list-item:nth-child(odd):hover{
+  background-color: #0D99FF;
+}
+.about-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.about-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 4px solid #0D99FF;
+  padding: 20px;
+  margin: 20px;
+  transition:  0.8s;
+}
+
+.about-list-item:hover {
+  background-color: #e519ac;
+}
+
+.about-list-item:nth-child(odd) {
+  border: 4px solid #410cb3;
+}
+
+.text-company-idea p,
+.text-company-production p,
+.text-company-story p,
+.text-company-units p,
+.text-company-opportunities p,
+.text-problem p,
+.text-solution p,
+.text-call p {
+  display: none;
+}
+
+.about-list-item:hover .text-company-idea p,
+.about-list-item:hover .text-company-production p,
+.about-list-item:hover .text-company-story p,
+.about-list-item:hover .text-company-units p,
+.about-list-item:hover .text-company-opportunities p,
+.text-problem-solution li:hover .text-problem p,
+.text-problem-solution li:hover .text-solution p,
+.text-problem-solution li:hover .text-call p {
+  display: block;
+}
+.about-list-item {
+  /*flex-basis: calc(33.33% - 40px); !* 40px - margin *!*/
+  border: 4px solid #0D99FF;
+  /*padding: 20px;*/
+  /*margin: 20px;*/
+  transition: 0.8s;
+}
 
 
 
