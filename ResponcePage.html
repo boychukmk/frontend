@@ -19,7 +19,7 @@
           <nav class="navbar">
             <div class="nav-conteiner">
               <ul class="nav-main">
-                <li> <a class="nav-item" href="AboutUS.html">Наша місія</a></li>
+                <li> <a class="nav-item" href="AboutUS.html">Про нас</a></li>
                 <li><a class="nav-item" href="Contacts.html">Контакти</a></li>
               </ul>
             </div>
@@ -45,54 +45,65 @@
       </div>
     </header>
   </div>
+  <main>
+    <section id="responce-section">
+      <div class="conteiner">
+        <h1>Залиште свій відгук</h1>
+      <div class="responce-box">
+        <div class="conteiner-responce">
+          <form action="ResponcePage.html" method="post">
+            <div class="responce-email">
+              <label for="email">Електронна пошта:</label>
+            <input type="email" id="email" name="email" required>
+            </div>
+            <div class="responce-age">
+              <label for="age">Ваш вік:</label>
+              <input type="number" id="age" name="age" required>
+            </div>
+            <div class="responce-longmassage">
+              <label for="message">Ваш відгук:</label>
+              <textarea id="message" name="message" rows="2" cols="35" required></textarea>
+            </div>
+            <div class="responce-select">
+              <label for="education">Ваша освіта:</label>
+              <select id="education" name="education">
+                <option value="engineer">Інженерна</option>
+                <option value="pedagogical">Педагогічна</option>
+                <option value="other">Інше</option>
+              </select>
+            </div>
+            <div class="responce-radio">
+              <label>Оцінка якості матеріалу:</label><br>
+              <input type="radio" id="like" name="quality" value="like">
+              <label for="like">Гарна</label>
+              <input type="radio" id="needs_improvement" name="quality" value="mid">
+              <label for="mid">Середня</label>
+              <input type="radio" id="incomplete" name="quality" value="bad">
+              <label for="bad">Погана</label>
+            </div>
+           <div class="respoce-checkbox">
+             <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent">Я згоден(-на) на обробку моїх персональних даних</label>
+           </div>
+            <div class="responce-button">
+              <button type="submit">Відправити відгук</button>
+            </div>
+           </form>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
 
-  <h2>Залиште свій відгук</h2>
-
-  <form action="ResponcePage.html" method="post">
-
-    <label for="email">Електронна пошта:</label>
-    <input type="email" id="email" name="email" required>
-    <br><br>
-
-    <label for="age">Ваш вік:</label>
-    <input type="number" id="age" name="age" required>
-    <br><br>
-
-    <label for="message">Ваш відгук:</label>
-    <textarea id="message" name="message" rows="2" cols="35" required></textarea>
-    <br> <br>
-
-    <label for="education">Ваша освіта:</label>
-    <select id="education" name="education">
-      <option value="engineer">Інженерна</option>
-      <option value="pedagogical">Педагогічна</option>
-      <option value="other">Інше</option>
-    </select>
-    <br><br>
-
-    <label>Оцінка якості матеріалу:</label><br>
-    <input type="radio" id="like" name="quality" value="like">
-    <label for="like">Гарна</label> <br>
-    <input type="radio" id="needs_improvement" name="quality" value="mid">
-    <label for="mid">Середня</label> <br>
-    <input type="radio" id="incomplete" name="quality" value="bad">
-    <label for="bad">Погана</label>
-    <br> <br>
-
-    <input type="checkbox" id="consent" name="consent" required>
-    <label for="consent">Я згоден(-на) на обробку моїх персональних даних</label>
-    <br> <br>
-
-    <button type="submit">Відправити відгук</button>
-  </form>
- <footer>
-
-    <p>
-      Контактна інформація: <br> corgibags@gmail.com <br>
-      +380990129004 <br>
-      проспект Миру 4Б, офіс 103 <br>
-    </p>
-    <p>&copy; 2023 Мій веб-сайт. Усі права захищені.</p>
+ <footer id="footer">
+    <div class="conteiner-footer">
+      <div class="footer-copywrite">
+        <p>corgibags@gmail.com</p>
+        <p> +380990129004<p>
+        <p>проспект Миру 4Б, офіс 103<p>
+        <p> &copy; 2023 Мій веб-сайт. Усі права захищені.</p>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
