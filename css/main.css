@@ -51,6 +51,11 @@ button{
   padding: 0 75px ;
   padding-top: 150px;
 }
+.conteiner-main{
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 75px ;
+}
 .conteiner-header{
   padding: 0 10px;
 }
