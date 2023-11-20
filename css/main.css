@@ -608,9 +608,38 @@ input[type="checkbox"] {
 #unit-section{
   font-size: 24px;
 }
-.unit-info, .unit-text, .unit-responce{
+.unit-responce {
+  max-width: 60%;
+  margin: auto auto;
+  background-color: #410CB3;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #E519AC;
+}
+.unit-responce {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-100%);
+  transition: transform 1s;
+  background-color: #410CB3;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #E519AC;
+}
+
+.unit-responce.active {
+  transform: translateY(20%);
+}
+.unit-info, .unit-text, .unit-responce-text{
   padding: 30px 0;
 
+}
+.responce-trigger{
+  cursor: pointer;
+  background-color: #E519AC;
+  width: 23%;
+  border-radius: 40px;
+  padding: 20px 20px ;
 }
 
 .unit-image{

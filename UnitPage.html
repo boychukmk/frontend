@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"  />
-
+  <script src="js/main.js"></script>
 </head>
 <body>
   <div>
@@ -58,11 +58,59 @@
           <p>Ціна товару</p>
           <p>І так далі інформація....</p>
         </div>
-        <div class="unit-responce">
-          <p> Залишити відгук про товар</p>
+        <div class="unit-responce-text">
+          <p class="responce-trigger"> Залишити відгук про товар</p>
         </div>
       </div>
     </div>
+      <section id="responce-section">
+      <div class="conteiner">
+<!--        <h1>Залиште свій відгук</h1>-->
+      <div class="unit-responce">
+        <div class="conteiner-responce">
+          <form action="ResponcePage.html" method="post">
+            <div class="responce-email">
+              <label for="email">Електронна пошта:</label>
+            <input type="email" id="email" name="email" required>
+            </div>
+            <div class="responce-age">
+              <label for="age">Ваш вік:</label>
+              <input type="number" id="age" name="age" required>
+            </div>
+            <div class="responce-longmassage">
+              <label for="message">Ваш відгук:</label>
+              <textarea id="message" name="message" rows="2" cols="35" required></textarea>
+            </div>
+            <div class="responce-select">
+              <label for="education">Ваша освіта:</label>
+              <select id="education" name="education">
+                <option value="engineer">Інженерна</option>
+                <option value="pedagogical">Педагогічна</option>
+                <option value="other">Інше</option>
+              </select>
+            </div>
+            <div class="responce-radio">
+              <label>Оцінка якості матеріалу:</label><br>
+              <input type="radio" id="like" name="quality" value="like">
+              <label for="like">Гарна</label>
+              <input type="radio" id="needs_improvement" name="quality" value="mid">
+              <label for="mid">Середня</label>
+              <input type="radio" id="incomplete" name="quality" value="bad">
+              <label for="bad">Погана</label>
+            </div>
+           <div class="respoce-checkbox">
+             <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent">Я згоден(-на) на обробку моїх персональних даних</label>
+           </div>
+            <div class="responce-button">
+              <button type="submit">Відправити відгук</button>
+            </div>
+           </form>
+        </div>
+      </div>
+      </div>
+    </section>
+
     </section>
   </main>
  <footer id="footer">
@@ -77,3 +125,4 @@
   </footer>
 </body>
 </html>
+
