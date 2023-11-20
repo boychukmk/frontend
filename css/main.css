@@ -605,6 +605,30 @@ input[type="checkbox"] {
 
 
 
+#unit-section{
+  font-size: 24px;
+}
+.unit-info, .unit-text, .unit-responce{
+  padding: 30px 0;
+
+}
+
+.unit-image{
+  width: 30%;
+  height: 400px;
+  padding: 30px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  color: grey;
+
+}
+
+
+
+
+
+
 
 hr {
   display: block;
